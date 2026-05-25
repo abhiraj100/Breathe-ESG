@@ -43,10 +43,10 @@ breathe-esg/
 
 ```bash
 cd backend
-pip install django djangorestframework django-cors-headers
-python manage.py migrate
-python manage.py seed          # creates demo tenant, users, sample records
-python manage.py runserver
+pip3 install django djangorestframework django-cors-headers
+python3 manage.py migrate
+python3 manage.py seed          # creates demo tenant, users, sample records
+python3 manage.py runserver
 ```
 
 ### Frontend
