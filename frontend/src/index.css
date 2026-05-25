@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100;
+    font-family: 'DM Sans', sans-serif;
+  }
+  * { box-sizing: border-box; }
+}
+
+@layer components {
+  .card {
+    @apply bg-slate-900 border border-slate-800 rounded-xl p-5;
+  }
+  .btn-primary {
+    @apply bg-forest-600 hover:bg-forest-500 text-white font-medium px-4 py-2 rounded-lg transition-colors text-sm;
+  }
+  .btn-secondary {
+    @apply bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium px-4 py-2 rounded-lg transition-colors text-sm border border-slate-700;
+  }
+  .btn-danger {
+    @apply bg-red-900/50 hover:bg-red-800 text-red-300 hover:text-red-200 font-medium px-4 py-2 rounded-lg transition-colors text-sm border border-red-800;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium;
+  }
+  .input {
+    @apply bg-slate-800 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 focus:outline-none focus:border-forest-500 focus:ring-1 focus:ring-forest-500/30 w-full;
+  }
+  .table-row {
+    @apply border-b border-slate-800 hover:bg-slate-800/40 transition-colors;
+  }
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #0a0f1a; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #475569; }
